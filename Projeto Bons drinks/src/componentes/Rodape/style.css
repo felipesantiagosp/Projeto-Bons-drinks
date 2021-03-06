@@ -1,0 +1,20 @@
+footer{
+  
+    grid-area: "footer";
+    width: 100%;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 42%);
+  }
+
+.peStilo{
+
+    height: 40px;
+    font-Size: 18px; 
+    font-Weight: bold; 
+    position: fixed;
+    bottom: 0;
+    background-Color: #FFFBEF
+
+    }
+
+

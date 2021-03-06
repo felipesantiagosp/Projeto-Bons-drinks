@@ -1,0 +1,21 @@
+header{
+  grid-area: "header";
+  grid-column: 1/3;
+  font-family: "Bilbo Swash Caps",cursive;
+  text-align: center;
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 42%);
+    
+  }
+.cabeca{
+    height: 60px;
+    font-Size: 24px; 
+    font-weight: bold;
+    background-Color: #FFFBEF
+  }
+.menu{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: auto;
+  }
