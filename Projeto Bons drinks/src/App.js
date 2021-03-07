@@ -8,9 +8,9 @@ import Header from './componentes/Header/';
 function App() {
   return (
     <div className = "div0">
-      <Header/>
+      
       <Formulario/>
-      <Rodape/>
+      
     </div>
   );
 }

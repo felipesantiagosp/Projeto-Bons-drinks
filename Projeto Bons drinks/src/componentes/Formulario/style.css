@@ -34,10 +34,13 @@
     flex-direction: column;
     justify-content: space-between;
     font-weight: bold;
-  
   }
   .inputText{
-    height: 50px;
+    height: 70px;
+  }
+  
+  .legendaInput{
+    margin-top: 7px;
   }
   .divForms{
     margin: auto;

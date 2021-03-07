@@ -1,0 +1,33 @@
+Primeira coisa: 
+
+1. npx create-react-app
+2. npm start (ver o site)
+3. Limpando o projeto
+    Tirar tudo que você não vai usar 
+    React usa o JSX que é parecido com o HTML 
+    Estrutura do Front-End 
+    React insere os elementos na div com id root 
+4. Componentização 
+    - Os elementos tem de estar em uma div/section mãe;
+    - Criar um componente > novo arquivo jsx 
+    - cada funcionalidade vai em um arquivo 
+    - Tem que colocar o componente dentro de uma classe e retornar com o método render
+    - usar o export para exportar o método: export class ListaDeNotas extends Component {
+    render(){
+      return()
+    - Importar o método usando o "import {NomeDoComponente} from "./components/ListaDeNotas""
+    - Criar um documento jsx para cada componente;
+    -  Pra usa algo do javascript colocamos entre {} dentro da tag;
+    - Não é tudo que é possível colocar dentro dos {}, porém algumas coisas dá e é mais fácil de desenvolver >>> Array > itera sobre o array 
+5. Estilização: Usamos o CSS, para colocarmos classe usamos className
+    - Importar o css para o arquivo 
+    - import "./estilo.css"
+    - Criar arquivo index.js dentro da pasta do componente >> após isso exportar e importar 
+6. Colocar funciionalidade >> como lidando com eventos;
+    - Criar uma classe pra colocar os atributos como o target value 
+    - Tem de chamar o super > construtor do pai
+    - O this indefinido >>>> dentro de uma função >> temos que usar o bind >> This indefinido por conta do escopo/contexto. This dinâmica > Evento quando for executar associa o this ao objeto 
+7. É importante passar o props (Props passa coisas entre os componentes) para o metodo constructor >> Criar um método no app e assim passar a propriedade pro método 
+    Você chama o método feito dentro do app em uma tag filha, porém tem de referenciar;
+    Constructor com super, ambos com props 
+8. Para pedir pra rederizar utilizamos os estados (states)

@@ -1,17 +1,21 @@
 import React, { Component } from "react";
 import imagemContato from "../../assets/contato.jpg";
-import "./style.css"
+import Botao from "../Botao/Botao";
+import Header from "../Header"
+import Rodape from "../Rodape"
+import "./style.css";
+import Input from "../Input/Input";
 
 export default class Formulario extends Component {
-  constructor(props){
-    super(props)
-    this.botao = "Enviar"
+  constructor(props) {
+    super(props);
   }
 
- 
   render() {
     return (
+      
       <div className="divmae">
+        <Header/>
         <h1 className="titulocontato">Contato</h1>
         <section className="principal">
           <div className="div2">
@@ -20,41 +24,17 @@ export default class Formulario extends Component {
           <div className="div1">
             <div className="divForms">
               <form className="formulario">
-                <div className="inputs">
-                  <div className="inputDisplay">
-                    <label>Nome:</label>
-                    <input
-                      className="inputName configinput"
-                      type="text"
-                      placeholder="Nome"
-                    ></input>
-                  </div>
-                  <div className="inputDisplay">
-                    <label>Email:</label>
-                    <input
-                      className="inputEmail configinput"
-                      type="email"
-                      placeholder="Email"
-                    ></input>
-                  </div>
-                  <div className="inputDisplay">
-                    <label>Mensagem:</label>
-                    <textarea
-                      className="inputText configinput"
-                      placeholder="Escreva aqui sua mensagem"
-                    ></textarea>
-                  </div>
-                </div>
-                <button
-                  className="botao1"
-
-                >
-                 Enviar
-                </button>
+                <Input
+                  legendaNome="Nome"
+                  legendaEmail="Email"
+                  legendaTexto="Mensagem"
+                />
+                <Botao  texto="Enviar" />
               </form>
             </div>
           </div>
         </section>
+        <Rodape/>
       </div>
     );
   }
