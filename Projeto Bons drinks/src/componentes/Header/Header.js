@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import "./style.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-export default class Header extends Component {
-  render() {
+function Header() {
+  
     return (
       <header className="cabeca">
         <ul className="menu">
@@ -26,4 +26,5 @@ export default class Header extends Component {
       </header>
     );
   }
-}
+
+export default Header

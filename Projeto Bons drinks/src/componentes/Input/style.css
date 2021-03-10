@@ -1,0 +1,13 @@
+.inputDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.inputText {
+  height: 70px;
+}
+
+.legendaInput {
+  margin-top: 7px;
+}

@@ -1,41 +1,20 @@
 import React, { Component } from "react";
-import "../Formulario/style.css";
+import "../Input/style.css"
+import Inputs from "../Inputs/Inputs";
 
-export default class Input extends Component {
-  constructor(props) {
-    super(props);
-    this.legendaNome = props.legendaNome;
-    this.legendaEmail = props.legendaEmail;
-    this.legendaTexto = props.legendaTexto;
-  }
-
-  render() {
-    return (
-      <div>
-        <div className="inputDisplay">
-          <label className="legendaInput">{this.legendaNome}</label>
-          <input
-            className="inputName configinput"
-            type="text"
-            placeholder={this.legendaNome}
-          ></input>
-        </div>
-        <div className="inputDisplay">
-          <label className="legendaInput">{this.legendaEmail}</label>
-          <input
-            className="inputEmail configinput"
-            type="email"
-            placeholder={this.legendaEmail}
-          ></input>
-        </div>
-        <div className="inputDisplay">
-          <label className="legendaInput">{this.legendaTexto}</label>
-          <textarea
-            className="inputText configinput"
-            placeholder="Escreva aqui sua mensagem"
-          ></textarea>
-        </div>
+export default function Input(props) {
+  return (
+    <div>
+      <div className="inputDisplay">
+        <Inputs titulo="Nome:" tipoInput="text" />
       </div>
-    );
-  }
+      <div className="inputDisplay" tipoInput="email">
+        <Inputs titulo="Email:" tipoInput="text-area" />
+      </div>
+      <div className="inputDisplay">
+        <label className="legendaInput">{props.legendaTexto}</label>
+        <textarea className="inputText"></textarea>
+      </div>
+    </div>
+  );
 }

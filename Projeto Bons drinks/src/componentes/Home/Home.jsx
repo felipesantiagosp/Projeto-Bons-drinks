@@ -4,8 +4,8 @@ import Rodape from "../Rodape";
 import ImagemHome from "../../assets/home.jpg";
 import "./style.css";
 
-export default class Home extends Component {
-  render() {
+function Home() {
+  
     return (
       <div className="divmae">
         <Header />
@@ -16,4 +16,4 @@ export default class Home extends Component {
       </div>
     );
   }
-}
+export default Home

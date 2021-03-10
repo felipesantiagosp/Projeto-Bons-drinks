@@ -1,21 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Open+Sans+Condensed:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Open+Sans+Condensed:wght@700&display=swap");
 
-.divImagHome{
-    width: 100%;
-    height: 530px;
-    background: url("../../assets/home.jpg") no-repeat 50% ;
-   
-    background-size:cover;
-    display: flex;
-    flex-direction: column;
+.divImagHome {
+  width: 100%;
+  height: 530px;
+  background: url("../../assets/home.jpg") no-repeat 50%;
 
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
-.bonsDrinksheader{
-    font-family: 'Bilbo Swash Caps', cursive;
-    color: white;
-    align-self: center;
-    font-size: 120px;
-    font-weight: bold;
-    margin-top: 10px;
+.bonsDrinksheader {
+  font-family: "Bilbo Swash Caps", cursive;
+  color: white;
+  align-self: center;
+  font-size: 120px;
+  font-weight: bold;
+  margin-top: 10px;
 }
