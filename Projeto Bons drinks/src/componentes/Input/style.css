@@ -4,10 +4,14 @@
   justify-content: space-between;
   font-weight: bold;
 }
+
 .inputText {
   height: 70px;
 }
 
 .legendaInput {
   margin-top: 7px;
+}
+
+.foco:focus {
 }

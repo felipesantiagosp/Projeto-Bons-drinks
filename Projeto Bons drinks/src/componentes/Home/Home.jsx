@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Header from "../Header";
 import Rodape from "../Rodape";
-import ImagemHome from "../../assets/home.jpg";
 import "./style.css";
 
 function Home() {

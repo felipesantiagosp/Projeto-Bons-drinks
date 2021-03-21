@@ -1,14 +1,14 @@
-.inputsDisplay{
-    display: flex;
-    flex-direction: column;
+.inputsDisplay {
+  display: flex;
+  flex-direction: column;
 }
 
-.labelEspacamento{
-    margin-bottom: 5px;
+.labelEspacamento {
+  margin-bottom: 5px;
 }
 
-.inputEspacamento{
-    margin-bottom: 15px;
-    padding: 5px;
-    width: 300px;
+.inputEspacamento {
+  margin-bottom: 15px;
+  padding: 5px;
+  width: 300px;
 }

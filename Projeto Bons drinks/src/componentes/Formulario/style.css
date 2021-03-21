@@ -35,9 +35,10 @@
 }
 
 .botao1 {
-  align-self: center;
+  align-self:flex-end;
+  font-size: medium;
   height: 30px;
-  width: 80px;
+  width: 150px;
   color: white;
   background-color: #5d0612;
   border: none;
@@ -81,3 +82,4 @@
   grid-column: 1;
   align-items: center;
 }
+

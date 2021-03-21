@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+.ulConteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 30px;
+}
+
+h4 {
+  display: inline;
+
+}
+.ilConteudo {
+  font-family: "Lato", sans-serif;
+}

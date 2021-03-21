@@ -1,0 +1,22 @@
+.dropdown{
+    width: 200px;
+    height: 80px;
+    background-color: brown;
+    color: aqua;
+    display: inline-block;
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    width: 200px;
+    height: 80px;
+    color: black;
+    background-color: azure;
+    position: absolute;
+
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    margin-top: 0px;
+}

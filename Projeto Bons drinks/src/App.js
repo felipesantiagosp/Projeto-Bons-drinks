@@ -2,7 +2,9 @@ import "./assets/App.css";
 import Formulario from "./componentes/Formulario/";
 import Home from "./componentes/Home/Home";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Inputs from "./componentes/Inputs/Inputs";
+import Api from "./componentes/Api/Api";
+import ConteudoDrinks from "./componentes/ConteudoDrinks/ConteudoDrinks";
+import TestandoDrop from "./Aulas_/TestandoDrop";
 
 function App() {
   return (
@@ -12,8 +14,11 @@ function App() {
           <Route path="/contato">
             <Formulario titulo="Contato" />
           </Route>
+          <Route path="/drinks">
+            <Api />
+          </Route>
           <Route path="/teste">
-            <Inputs tipoInput="text" titulo="Escreva seu nome aqui"/>
+            <TestandoDrop />
           </Route>
           <Route path="/">
             <Home />
