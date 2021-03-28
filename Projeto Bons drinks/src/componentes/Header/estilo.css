@@ -1,0 +1,13 @@
+.estilizacaoHeader {
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #fffbef;
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 42%);
+  margin-top: 0;
+}
+.listaHeader {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}

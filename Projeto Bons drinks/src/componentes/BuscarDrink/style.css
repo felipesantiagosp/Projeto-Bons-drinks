@@ -1,0 +1,83 @@
+.flex-api {
+  display: grid;
+  grid-template-rows: 100px 300px 100px;
+  grid-template-columns: 200px 600px 200px;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  flex-grow: 2;
+  list-style-type: none;
+  align-items: flex-start;
+}
+
+.corpo-buscarBebida{
+  grid-row-start: 2 ;
+  grid-row-end: 4;
+  grid-column: 2;
+  align-self: center;
+  justify-content:space-around;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+
+}
+.buscar-bebida {
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+
+
+.inputBuscar {
+  margin-bottom: 0px;
+  width: 350px;
+  height: 36px;
+  border-radius: 10px;
+  border: solid 0.5;
+  border-color: #5d0612;
+  font-size: medium;
+  color: #5d0612;
+}
+
+/* input:-moz-placeholder {
+  color: #5d0612;
+} */
+
+.botaoBuscar {
+  text-align: center;
+  font-size: medium;
+  color: aliceblue;
+  align-self: center;
+  background-color: #5d0612;
+  border: solid #5d0612;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  margin-left: 10px;
+}
+.infoDrink{
+  grid-row: 3;
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+
+}
+.estiloImg{
+  border: solid #5d0612;
+  border-radius: 10px;
+
+}
+.imagemEsq{
+  grid-row: 2;
+  grid-column: 1;
+  align-self: center;
+}
+.imagemDir{
+  grid-row: 2;
+  grid-column: 3;
+  align-self: center;
+
+}

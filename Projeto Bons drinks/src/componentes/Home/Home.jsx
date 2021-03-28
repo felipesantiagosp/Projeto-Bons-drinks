@@ -8,7 +8,7 @@ function Home() {
     return (
       <div className="divmae">
         <Header />
-        <div className="divImagHome">
+        <div className="divImagHome animacao">
           <h1 className="bonsDrinksheader">Bons Drinks</h1>
         </div>
         <Rodape />

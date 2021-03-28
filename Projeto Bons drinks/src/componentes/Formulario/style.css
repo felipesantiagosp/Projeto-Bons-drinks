@@ -56,12 +56,16 @@
 
 .titulocontato {
   align-self: center;
+  font-family: "Bilbo Swash Caps", cursive;
   color: #5d0612;
+  font-size: 70px;
+  margin-bottom: 0px;
+
+
 }
 .principal {
   display: flex;
   justify-content: space-evenly;
-  padding: 50px;
   align-items: center;
 }
 /* .contato{

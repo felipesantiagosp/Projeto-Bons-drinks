@@ -1,0 +1,31 @@
+.tituloSobreNos{
+    font-family: "Bilbo Swash Caps", cursive;
+    color: #5d0612;
+    font-size: 70px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.diplaySobre{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.fotoDrink{
+  
+    margin-left: 50px;
+  
+  }
+.paragSobre{
+    width: 400px;
+    text-indent: 20px;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 30px;
+    text-align: justify;
+}
+.conteudoSobreNos{
+    display: flex;
+    justify-content: space-around;
+    width: 850px;
+}

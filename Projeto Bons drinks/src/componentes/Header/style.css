@@ -13,6 +13,7 @@ header {
   box-shadow: 5px 5px 10px rgb(0 0 0 / 42%);
 }
 .menu {
+  
   display: flex;
   list-style: none;
   justify-content: space-around;

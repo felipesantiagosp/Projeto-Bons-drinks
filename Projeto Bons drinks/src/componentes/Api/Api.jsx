@@ -5,8 +5,19 @@ import Rodape from "../Rodape";
 import "./style.css";
 import { requisicao } from "../../Model/Url";
 import ConteudoDrinks from "../ConteudoDrinks/ConteudoDrinks";
+import {
+  Link,
+  useRouteMatch,
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
-export default function Api(props) {
+import BuscarDrink from "../BuscarDrink/BuscarDrink";
+
+export default function Api() {
+  let { url, path } = useRouteMatch();
+
   let [dadosApi, setDadosApi] = useState("Enviar");
   let [dadosApiConteudo, setDadosApiConteudo] = useState(0);
 
@@ -68,27 +79,28 @@ export default function Api(props) {
   ];
 
   function dadosCategoria(number) {
-    console.log()
+    console.log();
     return render[number];
   }
 
-  function card1(){
-    setDadosApi(dadosApi)
-    setDadosApiConteudo(0)
+  function card1() {
+    setDadosApi(dadosApi);
+    setDadosApiConteudo(0);
+    console.log(dadosApi);
   }
-  function card2(){
-    setDadosApi(dadosApi)
-    setDadosApiConteudo(1)
+  function card2() {
+    setDadosApi(dadosApi);
+    setDadosApiConteudo(1);
+    console.log(dadosApi);
   }
 
   useEffect(async () => {
     const req = await requisicao();
     setDadosApi(req);
+    console.log(req)
   }, []);
 
   let arrayQuant = [card1, card2, "card3", "card4", "card5", "card6"];
-
-
 
   return (
     <div className="divmae">
@@ -98,8 +110,12 @@ export default function Api(props) {
         <section className="cabecalho">
           <h1 className="tituloDrink">Drinks</h1>
           <div className="divBotao">
-            <button className="botoes">Drinks Populares</button>
-            <button className="botoes">Buscar Drinks</button>
+            <Link to={`${url}`}>
+              <button className="botoes">Drinks Populares</button>
+            </Link>
+            <Link to="buscarDrink/">
+              <button className="botoes">Buscar Drinks</button>
+            </Link>
           </div>
         </section>
         <section className="secaoBebidas">
